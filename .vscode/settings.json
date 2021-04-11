@@ -1,0 +1,29 @@
+{
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "compile",
+      "tools": [
+        "ptex2pdf"
+      ]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "ptex2pdf",
+      "command": "docker-compose",
+      "args": [
+        "run",
+        "--rm",
+        "tex",
+        "ptex2pdf",
+        "-u",
+        "-l",
+        "/workdir/report",
+        "-output-directory",
+        "/workdir/out"
+      ]
+    }
+  ],
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "latex-workshop.view.pdf.viewer": "tab"
+}
