@@ -3,5 +3,7 @@ version: '3.4'
 services:
   tex:
     image: kataokatsuki/latex
+    build: 
+      context: ./
     volumes:
       - ./:/workdir

@@ -5,4 +5,5 @@ RUN apk add bash curl sudo perl vim && \
     mkdir /tmp/install-tl-unx && \
     tar -xvf install-tl-unx.tar.gz -C /tmp/install-tl-unx && \
     echo "i" | /tmp/install-tl-unx/install-tl-*/install-tl -no-gui -repository http://texlive.texjp.org/current/tlnet/ && \
-    sudo /usr/local/texlive/????/bin/*/tlmgr path add
+    sudo /usr/local/texlive/????/bin/*/tlmgr path add && \
+    rm -r install-tl-unx.tar.gz /tmp/install-tl-unx
